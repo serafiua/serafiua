@@ -2,20 +2,15 @@
 ---
 
 ```python
-class Gis:
+class Profile:
     def __init__(self):
-        self.name = "Gis"
+        self.name = "Gisell"
         self.role = "Data Science Student"
-        self.interests = ["Machine Learning", "AI", "Data Visualization", "Frontend Dev"]
-        self.learning = ["Computer Vision", "Forecasting", "HTML", "CSS", "JavaScript"]
-        self.coffee_level = 9999
-        self.debugging_skill = "work in progress"
-        self.mood = "Depends on WiFi speed"
 
     def say_hi(self):
         print(f"Hi there 👋, I'm {self.name} — a {self.role}!")
 
-me = Gis()
+me = Profile()
 me.say_hi()
 ```
 ---

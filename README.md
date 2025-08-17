@@ -5,7 +5,7 @@
 - 🔭 Currently studying **Data Science**  
 - 📚 Into **Machine Learning, AI, and Analytics**  
 - 💡 Passionate about turning data → insights → action  
-- 🎮 Outside of code world, I love games & creative stuff!
+- 🎮 Outside of data world, I love games & creative stuff!
 
 ---
 

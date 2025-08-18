@@ -77,29 +77,4 @@ me.say_hi()
 </div>
 
 ---
-###
 
-<div align="center">
-
-  <!-- GitHub Streak -->
-  <picture>
-    <source 
-      media="(prefers-color-scheme: dark)" 
-      srcset="https://streak-stats.demolab.com?user=serafiua&theme=dracula&hide_border=false&border_radius=10" />
-    <source 
-      media="(prefers-color-scheme: light)" 
-      srcset="https://streak-stats.demolab.com?user=serafiua&theme=default&hide_border=false&border_radius=10" />
-    <img 
-      src="https://streak-stats.demolab.com?user=serafiua&theme=default&hide_border=false&border_radius=10" 
-      height="200" 
-      alt="streak graph" />
-  </picture>
-
-
-###
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/breakout-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="images/breakout-light.svg">
-  <img alt="github-breakout" src="images/breakout-light.svg">
-</picture>

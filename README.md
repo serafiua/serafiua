@@ -8,7 +8,7 @@ class Profile:
         self.role = "Data Science Student"
 
     def say_hi(self):
-        print(f"Hi there 👋, I'm {self.name} — a {self.role}!")
+        print(f"Hello 👋, I'm {self.name} — a {self.role}!")
 
 me = Profile()
 me.say_hi()
@@ -80,8 +80,21 @@ me.say_hi()
 ###
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=serafiua&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
-</div>
+
+  <!-- GitHub Streak -->
+  <picture>
+    <source 
+      media="(prefers-color-scheme: dark)" 
+      srcset="https://streak-stats.demolab.com?user=serafiua&theme=dracula&hide_border=false&border_radius=10" />
+    <source 
+      media="(prefers-color-scheme: light)" 
+      srcset="https://streak-stats.demolab.com?user=serafiua&theme=default&hide_border=false&border_radius=10" />
+    <img 
+      src="https://streak-stats.demolab.com?user=serafiua&theme=default&hide_border=false&border_radius=10" 
+      height="200" 
+      alt="streak graph" />
+  </picture>
+
 
 ###
 

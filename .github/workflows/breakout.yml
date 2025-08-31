@@ -2,7 +2,7 @@ name: generate breakout svg
 
 on:
   schedule:
-    - cron: "0 */24 * * *"
+    - cron: "0 */24 * * *"  
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: generate SVG
+      - name: Generate SVG
         uses: cyprieng/github-breakout@v1.1.0
         with:
           github_username: ${{ github.repository_owner }}
@@ -32,12 +32,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Commit and force-push SVGs to target branch
+      - name: Commit SVGs and update README
         run: |
-          git checkout --orphan github-breakout
-          git rm -rf .
-          mkdir images
+          git checkout main
+          mkdir -p images
           mv /tmp/breakout-images/* images/
-          git add images
+          git add images README.md
           git commit -m "chore: update GitHub breakout SVGs" || echo "No changes to commit"
-          git push --force origin github-breakout
+          git push origin main
